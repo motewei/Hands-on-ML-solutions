@@ -1,0 +1,138 @@
+{
+    "architecture": {
+        "layers": [
+            {
+                "layer_type": "convolutional",
+                "in_channels": 3,
+                "out_channels": 96,
+                "kernel_size": [
+                    3,
+                    3
+                ],
+                "padding": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "layer_type": "convolutional",
+                "in_channels": 96,
+                "out_channels": 256,
+                "kernel_size": [
+                    3,
+                    3
+                ],
+                "padding": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "layer_type": "max_pooling",
+                "kernel_size": 2
+            },
+            {
+                "layer_type": "dropout",
+                "p": 0.25
+            },
+            {
+                "layer_type": "convolutional",
+                "in_channels": 256,
+                "out_channels": 128,
+                "kernel_size": [
+                    3,
+                    3
+                ],
+                "padding": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "layer_type": "convolutional",
+                "in_channels": 128,
+                "out_channels": 64,
+                "kernel_size": [
+                    3,
+                    3
+                ],
+                "padding": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "layer_type": "max_pooling",
+                "kernel_size": 2
+            },
+            {
+                "layer_type": "dropout",
+                "p": 0.25
+            },
+            {
+                "layer_type": "fully_connected",
+                "in_features": 4096,
+                "out_features": 512
+            },
+            {
+                "layer_type": "dropout",
+                "p": 0.5
+            },
+            {
+                "layer_type": "fully_connected",
+                "in_features": 512,
+                "out_features": 10
+            }
+        ]
+    },
+    "training_results": {
+        "train_loss": [
+            1.5592713794898987,
+            1.1528353268623353,
+            0.9858070114707946,
+            0.8745485020828248,
+            0.7926590718078613,
+            1.5963104985046386,
+            1.1802808717346192,
+            0.9855785822868347,
+            0.8718889863204956,
+            0.7952033412933349
+        ],
+        "train_acc": [
+            0.43086,
+            0.59022,
+            0.6526,
+            0.69146,
+            0.72174,
+            0.41286,
+            0.57812,
+            0.65442,
+            0.69354,
+            0.72078
+        ],
+        "test_loss": [
+            1.2672022844314574,
+            0.9542387208938599,
+            0.8550274309158326,
+            0.7813850440979004,
+            0.7294391708374024,
+            1.19755830783844,
+            1.0102910188674927,
+            0.8660024461746216,
+            0.8033372014999389,
+            0.7400691631317139
+        ],
+        "test_acc": [
+            0.5502,
+            0.6651,
+            0.6996,
+            0.7269,
+            0.7445,
+            0.5618,
+            0.6435,
+            0.6946,
+            0.7186,
+            0.7439
+        ]
+    }
+}
