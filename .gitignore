@@ -1,2 +1,7 @@
 # 忽略20newsgroups数据集
 第16章 概率图模型/章节习题解答/20newsgroups/
+
+# 忽略Mnist数据集
+第18章 自动编码器\dataset.zip
+第18章 自动编码器\mnist_train.csv
+第18章 自动编码器\mnist_test.csv
